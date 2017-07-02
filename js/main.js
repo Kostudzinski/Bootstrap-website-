@@ -1,11 +1,10 @@
 'use strict';
 
-console.log('elo');
 
 $(document).ready(function () {
     changePosition();
     
-    
+//    changeColor();
     scrollSlow();
 
     
@@ -16,17 +15,41 @@ $(window).scroll(function() {
 })
                   
 function changePosition() {
-    var wysokosc = $('.list').height();
+    var wysokosc = $('.container-fluid').height();
+    
+    if ($(window).width() >= 786) {
     
     if ($(window).scrollTop() >= wysokosc) {
 
-        $('.list').addClass('klasa');
+        $('.container-fluid').addClass('klasa');
 
     } else {
-        $('.list').removeClass('klasa');
+        $('.container-fluid').removeClass('klasa');
 
     }
+}
 };
+
+
+
+//function changeColor() {
+//    var szerokosc = $(window).width();
+//    console.log(szerokosc);
+//    
+//    if ($(szerokosc) >= 768) {
+//
+//        $('#nawigacja').addClass('klasa2');
+//        $('.navbar-brand').addClass('klasa3');
+//        $('.nav li').addClass('klasa3');
+//
+//    } else {
+//        $('#nawigacja').removeClass('klasa2');
+//        $('.navbar-brand').removeClass('klasa3');
+//        $('.container-fluid a').removeClass('klasa3');
+//        
+//    }
+//};
+
 
 function scrollSlow() {
 
@@ -44,7 +67,7 @@ function scrollSlow() {
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 100
+        scrollTop: $(hash).offset().top - 20
       }, 500, 
 //                              function(){
 //   
@@ -54,3 +77,6 @@ function scrollSlow() {
                              );
     } // End if
   });};
+
+
+

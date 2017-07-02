@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 768px) {
+
+    #nawigacja {
+        background-color: white;
+        color: aqua;
+    }
+    
+    .nav li a {
+        color: aqua;
+    }
+    
+    .navbar-default .navbar-brand {
+        color: aqua; 
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: aqua;
+        text-align: right;
+    }
+    
+    .navbar-default .navbar-toggle {
+        
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: aqua;
+    }
+
+}

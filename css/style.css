@@ -4,6 +4,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+{
+    background-color: white;
+    color: #0ed8d6;
+}
+
 #nav {
     height: 50px;
     background-color: none;
@@ -17,6 +26,11 @@
     text-align: right;
     padding: 0px 20px 0px 20px;
     line-height: 50px;
+
+}
+
+.container-fluid {
+        transition: .5s;
 
 }
 
@@ -45,18 +59,24 @@
 }
 
 .klasa {
-    background-color: darkgrey;
-    color: #333333;
+    background-color: rgba(14, 216, 214, 0.85);
 }
+
+.klasa2 {
+    background-color: white;
+    color:  #0ed8d6;
+    
+}
+
 
 header {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background-image: 
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
     url('../img/header/pictures.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     position: relative;
     
@@ -72,5 +92,340 @@ header {
     top: 0;
     bottom: 0;
     color: white;
+    text-align: center;
 }
 
+.italic {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+#center h2 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    background-color: #0ed8d6;
+    border: none;
+    transition: 0.5s;
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    color: #0ed8d6;
+    background-color: white;
+    border: 2px solid #0ed8d6;
+    text-decoration: none;
+}
+
+.btn:hover a {
+    color: #0ed8d6;
+}
+
+section {
+    text-align: center;
+    margin-top: 80px;
+}
+
+section h2 {
+        padding-top: 80px;
+
+    font-weight: 900;
+    font-family: 'Montserrat'
+}
+
+section p {
+    padding-top: 50px;
+}
+
+.uslugi {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.round {
+    position: relative;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: #0ed8d6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; 
+    transition: 0.5s;
+}
+
+.ikonki {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    margin: auto;
+    font-size: 30px;
+    color: white;
+
+}
+
+.ikonki a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.round:hover {
+    color: #0ed8d6;
+    background-color: white;
+    border: 2px solid #0ed8d6;
+    text-decoration: none;
+    transform: rotate(360deg);
+}
+
+.round:hover a i {
+    color: #0ed8d6;
+    
+}
+
+#portfolio {
+    background-color: #f7f7f7; 
+}
+
+
+
+.zdjecia {
+    height: 400px;
+    background-color: #f7f7f7;
+}
+
+.inner {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 350px;
+    background-color: white;
+}
+
+.innerinner {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+    height:100%;
+    text-align: center;
+    object-fit: cover;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.inner p {
+    padding: 20px;
+}
+
+
+
+
+.cover {
+    width: 120%;
+    height: 120%;
+    background-color: rgba(14, 216, 214, 0.85);
+    opacity: 0;
+    transition: .5s;
+}
+
+.raz {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dwa {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.trzy {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cztery {
+    background-image: url(../img/portfolio//child_with_blue_paint.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.piec {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.szesc {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+        background-position: center;
+    background-size: cover;
+}
+
+.photo:hover {
+    transform: scale(1.2);
+}
+
+.photo:hover .cover {
+    opacity: 1;
+}
+
+.ziomki-kontener {
+    padding-top: 110px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ziomki {
+    height: 400px;
+}
+
+.roundziomek {
+    position: relative;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.one {
+    background-image: url(../img/team/man-1.jpg);
+}
+
+.two {
+    background-image: url(../img/team/man-2.jpg);
+}
+
+.three {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+.kolo {
+    display: inline-block;
+
+    padding: 5px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .5s;
+}
+
+.kolo a {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+.kolo:hover {
+    background-color: #0ed8d6;
+}
+
+#contact {
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/footer/world-map.jpg);
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.formkontener {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.input1 {
+    width: 80%;
+    color: black;
+}
+
+.input2 {
+    width: 80%;
+    height: 125px;
+        color: black;
+
+}
+
+.footer {
+    background-color: white;
+    height: 50px;
+}
+
+.txtnadole {
+    color: black;
+    display: inline-block;
+    line-height: 50px;
+    padding: 0;
+}
+
+.txtaktywne {
+    color: black;
+    display: inline-block;
+        line-height: 50px;
+        padding: 0;
+    font-weight: 900;
+    transition: .5s;
+
+
+}
+
+.drugi {
+    margin-left: 20px;
+}
+
+
+.txtaktywne:hover {
+    color: #0ed8d6;
+}
+
+#buttonplace {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.footerdiv {
+    display: inline-block;
+    text-align: center;
+}
+    
